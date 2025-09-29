@@ -77,27 +77,27 @@ export function Footer() {
           <div className="flex flex-col items-start justify-start">
             <h2 className="mb-3 font-semibold md:mb-4">Services</h2>
             <ul>
-              <li className="text-small py-2">
+              <li className="py-2 text-sm">
                 <a href="#" className="flex items-center gap-3">
                   Web development
                 </a>
               </li>
-              <li className="text-small py-2">
+              <li className="py-2 text-sm">
                 <a href="#" className="flex items-center gap-3">
                   Mobile apps
                 </a>
               </li>
-              <li className="text-small py-2">
+              <li className="py-2 text-sm">
                 <a href="#" className="flex items-center gap-3">
                   UI/UX design
                 </a>
               </li>
-              <li className="text-small py-2">
+              <li className="py-2 text-sm">
                 <a href="#" className="flex items-center gap-3">
                   Consulting
                 </a>
               </li>
-              <li className="text-small py-2">
+              <li className="py-2 text-sm">
                 <a href="#" className="flex items-center gap-3">
                   Support
                 </a>
@@ -107,27 +107,27 @@ export function Footer() {
           <div className="flex flex-col items-start justify-start">
             <h2 className="mb-3 font-semibold md:mb-4">Company</h2>
             <ul>
-              <li className="text-small py-2">
+              <li className="py-2 text-sm">
                 <a href="#" className="flex items-center gap-3">
                   About us
                 </a>
               </li>
-              <li className="text-small py-2">
+              <li className="py-2 text-sm">
                 <a href="#" className="flex items-center gap-3">
                   Careers
                 </a>
               </li>
-              <li className="text-small py-2">
+              <li className="py-2 text-sm">
                 <a href="#" className="flex items-center gap-3">
                   Blog
                 </a>
               </li>
-              <li className="text-small py-2">
+              <li className="py-2 text-sm">
                 <a href="#" className="flex items-center gap-3">
                   Contact
                 </a>
               </li>
-              <li className="text-small py-2">
+              <li className="py-2 text-sm">
                 <a href="#" className="flex items-center gap-3">
                   Resources
                 </a>
@@ -137,27 +137,27 @@ export function Footer() {
           <div className="flex flex-col items-start justify-start">
             <h2 className="mb-3 font-semibold md:mb-4">Case studies</h2>
             <ul>
-              <li className="text-small py-2">
+              <li className="py-2 text-sm">
                 <a href="#" className="flex items-center gap-3">
                   Guides
                 </a>
               </li>
-              <li className="text-small py-2">
+              <li className="py-2 text-sm">
                 <a href="#" className="flex items-center gap-3">
                   Tutorials
                 </a>
               </li>
-              <li className="text-small py-2">
+              <li className="py-2 text-sm">
                 <a href="#" className="flex items-center gap-3">
                   FAQs
                 </a>
               </li>
-              <li className="text-small py-2">
+              <li className="py-2 text-sm">
                 <a href="#" className="flex items-center gap-3">
                   Legal
                 </a>
               </li>
-              <li className="text-small py-2">
+              <li className="py-2 text-sm">
                 <a href="#" className="flex items-center gap-3">
                   Terms
                 </a>
@@ -165,68 +165,68 @@ export function Footer() {
             </ul>
           </div>
           <div className="flex flex-col items-start justify-start">
-            <h2 className="mb-3 font-semibold md:mb-4">Privacy</h2>
+            <h2 className="mb-3 font-semibold md:mb-4">Socials</h2>
             <ul>
-              <li className="text-small py-2">
+              <li className="py-2 text-sm">
                 <a href="#" className="flex items-center gap-3">
-                  Cookies
+                  GitHub
                 </a>
               </li>
-              <li className="text-small py-2">
+              <li className="py-2 text-sm">
                 <a href="#" className="flex items-center gap-3">
-                  Sitemap
+                  Instagram
                 </a>
               </li>
-              <li className="text-small py-2">
+              <li className="py-2 text-sm">
                 <a href="#" className="flex items-center gap-3">
-                  Accessibility
+                  WhatsApp
                 </a>
               </li>
-              <li className="text-small py-2">
+              <li className="py-2 text-sm">
                 <a href="#" className="flex items-center gap-3">
-                  Social
+                  Twitter
                 </a>
               </li>
-              <li className="text-small py-2">
+              <li className="py-2 text-sm">
                 <a href="#" className="flex items-center gap-3">
-                  LinkedIn
+                  Linkedin
                 </a>
               </li>
             </ul>
           </div>
           <div className="flex flex-col items-start justify-start">
-            <h2 className="mb-3 font-semibold md:mb-4">Twitter</h2>
+            <h2 className="mb-3 font-semibold md:mb-4">Privacy</h2>
             <ul>
-              <li className="text-small py-2">
+              <li className="py-2 text-sm">
                 <a href="#" className="flex items-center gap-3">
-                  GitHub
+                  Cookies
                 </a>
               </li>
-              <li className="text-small py-2">
+              <li className="py-2 text-sm">
                 <a href="#" className="flex items-center gap-3">
-                  Dribbble
+                  Sitemap
                 </a>
               </li>
-              <li className="text-small py-2">
+              <li className="py-2 text-sm">
                 <a href="#" className="flex items-center gap-3">
-                  Behance
+                  Accessibility
                 </a>
               </li>
-              <li className="text-small py-2">
+              {/* <li className="text-sm py-2">
                 <a href="#" className="flex items-center gap-3">
-                  Link Twenty Four
+                  Social
                 </a>
               </li>
-              <li className="text-small py-2">
+              <li className="text-sm py-2">
                 <a href="#" className="flex items-center gap-3">
-                  Link Twenty Five
+                  LinkedIn
                 </a>
-              </li>
+              </li> */}
             </ul>
           </div>
         </div>
         <div className="bg-scheme-border h-px w-full" />
-        <div className="text-small flex flex-col-reverse items-start pt-6 pb-4 md:justify-start md:pt-8 md:pb-0 lg:flex-row lg:items-center lg:justify-between">
+        <div className="flex flex-col-reverse items-start pt-6 pb-4 text-sm md:justify-start md:pt-8 md:pb-0 lg:flex-row lg:items-center lg:justify-between">
           <div className="flex flex-col-reverse items-start md:flex-row md:gap-6 lg:items-center">
             <div className="grid grid-flow-row grid-cols-[max-content] justify-center gap-y-4 md:grid-flow-col md:justify-center md:gap-x-6 md:gap-y-0 lg:text-left">
               <p className="mt-8 md:mt-0">

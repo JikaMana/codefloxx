@@ -55,7 +55,7 @@ export const OurVisionAndMission = () => {
   ];
 
   return (
-    <div className="flex min-h-screen flex-col lg:h-screen lg:flex-row">
+    <div className="flex min-h-screen flex-col bg-white lg:h-screen lg:flex-row">
       <div className="order-2 flex flex-1 items-center justify-center p-8 text-black lg:order-1 lg:w-1/2 lg:p-16">
         <div className="container max-w-xl text-center lg:text-left">
           <p className="mb-6 text-lg font-medium">About Us</p>

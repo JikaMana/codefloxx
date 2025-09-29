@@ -57,13 +57,13 @@ export function Process() {
             className="max-w-[768px]"
           />
         </div>
-        <div className="relative grid auto-cols-fr grid-cols-1 overflow-hidden md:flex">
+        <div className="relative grid auto-cols-fr grid-cols-1 gap-x-4 gap-y-12 overflow-hidden sm:grid-cols-2 lg:flex">
           {processStepsData.map((item) => (
             <div
               key={item.step}
               className={`relative flex flex-col items-center text-center md:flex-1 md:px-4`}
             >
-              <div className="mb-6 aspect-video overflow-hidden rounded-2xl md:mb-8 md:w-full">
+              <div className="mb-4 aspect-video overflow-hidden rounded-xl md:mb-8 md:w-full md:rounded-2xl lg:mb-6">
                 <img
                   src={item.src}
                   alt={item.imageAlt}
@@ -71,13 +71,13 @@ export function Process() {
                 />
               </div>
 
-              <div className="relative z-10 mt-4 flex flex-col items-center self-stretch md:w-full md:flex-row md:justify-center md:self-auto">
+              <div className="z-10 mt-4 hidden flex-col items-center self-stretch md:w-full md:flex-row md:justify-center md:self-auto lg:flex">
                 <div className="absolute inset-x-0 -left-10 hidden h-1.5 w-[150%] bg-black md:block" />
 
                 <div className="absolute size-5 flex-none rounded-full border-8 border-[#CCEAEC] bg-black p-2 md:absolute" />
               </div>
 
-              <div className="mt-6 md:mt-10 md:text-center">
+              <div className="md:text-center lg:mt-10">
                 <h3 className="mb-2 text-3xl font-bold">{item.step}</h3>
                 <p className="text-lg">{item.description}</p>
               </div>

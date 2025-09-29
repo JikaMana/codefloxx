@@ -4,9 +4,9 @@ import { Card, CardContent } from "@/components/ui/card";
 const HeroSection = () => {
   return (
     <div className="bg-brand-main flex min-h-screen flex-col lg:h-screen lg:flex-row">
-      <div className="order-2 flex flex-1 items-center justify-center p-8 text-white lg:order-1 lg:w-1/2 lg:p-16">
+      <div className="order-1 flex flex-1 items-center justify-center p-8 text-white lg:w-1/2 lg:p-16">
         <div className="container max-w-xl text-center lg:text-left">
-          <h1 className="text-5xl leading-tight font-extrabold tracking-tighter md:text-6xl lg:text-7xl">
+          <h1 className="mt-[120px] text-5xl leading-tight font-extrabold tracking-tighter md:text-6xl lg:text-7xl">
             Digital solutions built with precision and passion
           </h1>
 
@@ -16,7 +16,7 @@ const HeroSection = () => {
             products tailored to your unique needs.
           </p>
 
-          <div className="mt-10 flex max-w-40 flex-col items-center gap-4 sm:flex-row sm:justify-center lg:justify-start">
+          <div className="mx-auto mt-10 flex max-w-40 flex-col items-center gap-4 sm:flex-row sm:justify-center lg:mx-0 lg:justify-start">
             <Button
               title="Quote"
               size="xl"
@@ -38,7 +38,7 @@ const HeroSection = () => {
         </div>
       </div>
 
-      <div className="relative order-1 mt-[116px] flex min-h-[50vh] flex-1 items-stretch md:mt-[120px] lg:order-2 lg:w-1/2">
+      <div className="relative order-2 hidden min-h-[50vh] flex-1 items-stretch lg:flex lg:w-1/2">
         <img
           className="h-full w-full object-cover"
           src="https://res.cloudinary.com/deid1vy94/image/upload/v1759105727/photo-1728044849291-69f90d443aea_xxvut3.avif"

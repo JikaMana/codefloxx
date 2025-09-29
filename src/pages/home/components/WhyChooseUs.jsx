@@ -8,7 +8,7 @@ import { SectionHeader } from "@/components/SectionHeader";
 
 export function WhyChooseUs() {
   return (
-    <section className="flex-center flex-center px-[5%] py-16 md:py-24 lg:py-28">
+    <section className="flex-center flex-center bg-white px-[5%] py-16 md:py-24 lg:py-28">
       <div className="container">
         <div className="mb-12 md:mb-18 lg:mb-20">
           <SectionHeader

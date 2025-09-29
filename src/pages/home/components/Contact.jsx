@@ -13,7 +13,7 @@ export function Contact() {
               initial={{ x: "-50%" }}
               animate={{ x: "0%" }}
               transition={{ type: "spring", bounce: 0 }}
-              className="mb-4 block text-7xl font-bold text-white"
+              className="block text-4xl font-bold text-white sm:mb-4 sm:text-5xl md:mb-6 md:text-6xl lg:text-7xl"
             >
               Stay ahead
             </motion.span>
@@ -23,7 +23,7 @@ export function Contact() {
               initial={{ x: "50%" }}
               animate={{ x: "0%" }}
               transition={{ type: "spring", bounce: 0 }}
-              className="mb-5 block text-7xl font-bold text-white md:mb-6"
+              className="mb-5 block text-4xl font-bold text-white sm:text-5xl md:mb-6 md:text-6xl lg:text-7xl"
             >
               with our newsletter
             </motion.span>

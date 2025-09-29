@@ -32,7 +32,7 @@ export function Features() {
   ];
 
   return (
-    <section className="flex-center px-[5%] py-16 md:py-24 lg:py-28">
+    <section className="flex-center bg-white px-[5%] py-16 md:py-24 lg:py-28">
       <div className="container">
         <div className="flex flex-col items-center">
           <div className="mb-12 text-center md:mb-18 lg:mb-20">

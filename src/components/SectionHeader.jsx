@@ -42,7 +42,9 @@ export function SectionHeader({
     <div className={`mx-auto text-center ${className}`}>
       <p className="mb-3 text-xl font-medium md:mb-4">{tagline}</p>
 
-      <h1 className="mb-5 text-6xl font-semibold md:mb-6">{title}</h1>
+      <h1 className="mb-5 text-3xl font-semibold sm:text-4xl md:mb-6 md:text-5xl lg:text-6xl">
+        {title}
+      </h1>
 
       <p className="text-xl tracking-wide">{description}</p>
 
