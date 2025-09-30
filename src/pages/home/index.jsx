@@ -1,6 +1,7 @@
 import React from "react";
 import { WhyChooseUs } from "./components/WhyChooseUs";
 import { Features } from "./components/Features";
+import { Services } from "./components/Services";
 import { Process } from "./components/Process";
 import { Portfolio } from "./components/Portfolio";
 import { ClientStories } from "./components/ClientStories";
@@ -14,6 +15,7 @@ export default function Home() {
     <div>
       <HeroSection />
       <WhyChooseUs />
+      <Services />
       <Features />
       <Process />
       <Portfolio />

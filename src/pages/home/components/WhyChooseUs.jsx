@@ -2,7 +2,6 @@ import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import React from "react";
-import { RxChevronRight } from "react-icons/rx";
 import { ReasonsTabContent, ReasonsTabHeader } from "./ReasonsTab";
 import { SectionHeader } from "@/components/SectionHeader";
 

@@ -4,6 +4,7 @@ import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
 import { useMediaQuery } from "@/hooks/use-media-query";
 import { AnimatePresence, motion } from "framer-motion";
+import { Menu, X } from "lucide-react";
 import React, { useEffect, useRef, useState } from "react";
 import { RxChevronDown } from "react-icons/rx";
 
@@ -60,7 +61,7 @@ export function Navbar() {
   const useActive = useFunctionalities();
   return (
     <section className="fixed inset-0 bottom-auto z-[999] mx-auto mt-5 flex w-full px-[5%] md:mt-6 lg:mx-[5%] lg:w-auto lg:px-0">
-      <Card className="max-w-xxl mx-auto flex min-h-16 w-full items-center justify-between gap-x-4 gap-y-4 overflow-visible bg-transparent px-5 backdrop-blur-sm md:min-h-18 md:px-8">
+      <Card className="max-w-xxl bg-brand-main mx-auto flex min-h-12 w-full items-center justify-between gap-x-4 gap-y-4 overflow-visible rounded-b-none px-5 backdrop-blur-sm md:min-h-18 md:px-8 lg:rounded-b-xl lg:bg-transparent">
         <a href="#">
           <img
             src="/codefloxx.svg"
@@ -70,46 +71,14 @@ export function Navbar() {
         </a>
         <button
           ref={useActive.buttonRef}
-          className="-mr-2 flex size-12 flex-col items-center justify-center lg:hidden"
+          className="-mr-2 flex size-12 cursor-pointer flex-col items-center justify-center lg:hidden"
           onClick={useActive.toggleMobileMenu}
         >
-          <motion.span
-            className="bg-neutral-darkest my-[3px] h-0.5 w-6"
-            animate={useActive.animateMobileMenuButtonSpan}
-            variants={{
-              open: { translateY: 8, transition: { delay: 0.1 } },
-              rotatePhase: { rotate: -45, transition: { delay: 0.2 } },
-              closed: {
-                translateY: 0,
-                rotate: 0,
-                transition: { duration: 0.2 },
-              },
-            }}
-          />
-          <motion.span
-            className="bg-neutral-darkest my-[3px] h-0.5 w-6"
-            animate={useActive.animateMobileMenu}
-            variants={{
-              open: { width: 0, transition: { duration: 0.1 } },
-              closed: {
-                width: "1.5rem",
-                transition: { delay: 0.3, duration: 0.2 },
-              },
-            }}
-          />
-          <motion.span
-            className="bg-neutral-darkest my-[3px] h-0.5 w-6"
-            animate={useActive.animateMobileMenuButtonSpan}
-            variants={{
-              open: { translateY: -8, transition: { delay: 0.1 } },
-              rotatePhase: { rotate: 45, transition: { delay: 0.2 } },
-              closed: {
-                translateY: 0,
-                rotate: 0,
-                transition: { duration: 0.2 },
-              },
-            }}
-          />
+          {useActive.isDropdownOpen ? (
+            <X color="white" size={32} />
+          ) : (
+            <Menu color="white" size={32} />
+          )}
         </button>
         <motion.div
           variants={{
@@ -130,11 +99,11 @@ export function Navbar() {
             initial="close"
             exit="close"
             transition={{ duration: 0.3 }}
-            className="absolute top-0 right-0 left-0 mx-auto min-w-[200px] justify-self-center px-[5%] text-center lg:static lg:inset-auto lg:mx-0 lg:px-0 lg:text-left lg:[--translate-y:0%]"
+            className="absolute -top-2 right-0 left-0 mx-auto w-full justify-self-center text-center lg:static lg:inset-auto lg:mx-0 lg:px-0 lg:text-left lg:[--translate-y:0%]"
           >
             <div
               ref={useActive.menuRef}
-              className="border-scheme-border flex w-full flex-col border border-t-0 bg-white p-5 md:p-8 lg:w-auto lg:flex-row lg:border-none lg:bg-transparent lg:p-0"
+              className="border-scheme-border bg-brand-main flex w-full flex-col border border-t-0 p-5 pt-0 md:p-8 lg:w-auto lg:flex-row lg:border-none lg:bg-transparent lg:p-0"
             >
               <a
                 href="#"
@@ -159,7 +128,7 @@ export function Navbar() {
                 onMouseLeave={useActive.closeOnDesktopDropdownMenu}
               >
                 <button
-                  className="text-regular flex w-full items-center justify-center gap-4 py-3 text-left text-white lg:flex-none lg:justify-start lg:gap-2 lg:px-4 lg:py-2"
+                  className="text-regular flex w-full items-center justify-center gap-0 py-3 text-left text-white lg:flex-none lg:justify-start lg:gap-2 lg:px-4 lg:py-2"
                   onClick={useActive.openOnMobileDropdownMenu}
                 >
                   <span>About</span>
@@ -171,7 +140,7 @@ export function Navbar() {
                     animate={useActive.animateDropdownMenuIcon}
                     transition={{ duration: 0.3 }}
                   >
-                    <RxChevronDown />
+                    <RxChevronDown className="size-6" strokeWidth={1} />
                   </motion.span>
                 </button>
                 <AnimatePresence>
@@ -194,23 +163,23 @@ export function Navbar() {
                       },
                     }}
                     transition={{ duration: 0.2 }}
-                    className="lg:border-scheme-border bg-white lg:absolute lg:z-50 lg:border lg:p-2 lg:[--height:auto] lg:[--y-close:25%]"
+                    className="lg:border-scheme-border bg-brand-secondary rounded-lg lg:absolute lg:z-50 lg:border lg:p-1 lg:[--height:auto] lg:[--y-close:25%]"
                   >
                     <a
                       href="#"
-                      className="text-regular block py-3 text-center lg:px-4 lg:py-2 lg:text-left"
+                      className="text-regular hover:bg-brand-shade-dark block rounded-lg py-3 text-center font-medium lg:px-4 lg:py-2 lg:text-left"
                     >
                       About Us
                     </a>
                     <a
                       href="#"
-                      className="text-regular block py-3 text-center lg:px-4 lg:py-2 lg:text-left"
+                      className="text-regular hover:bg-brand-shade-dark block rounded-lg py-3 text-center font-medium lg:px-4 lg:py-2 lg:text-left"
                     >
                       Pricing
                     </a>
                     <a
                       href="#"
-                      className="text-regular block py-3 text-center lg:px-4 lg:py-2 lg:text-left"
+                      className="text-regular hover:bg-brand-shade-dark block rounded-lg py-3 text-center font-medium lg:px-4 lg:py-2 lg:text-left"
                     >
                       Consultation
                     </a>
@@ -222,14 +191,14 @@ export function Navbar() {
                   title="Quote"
                   variant="outline"
                   size="lg"
-                  className="w-full rounded-full px-3 py-1.5 font-medium shadow-none"
+                  className="bg-brand-secondary w-full cursor-pointer rounded-full px-3 py-1.5 font-medium shadow-none"
                 >
                   Quote
                 </Button>
                 <Button
                   title="Contact"
                   size="lg"
-                  className="bg-brand-shade-dark w-full rounded-full px-3 py-1.5 font-medium text-white"
+                  className="bg-brand-shade-dark w-full cursor-pointer rounded-full px-3 py-1.5 font-medium text-white hover:bg-transparent"
                 >
                   Contact
                 </Button>

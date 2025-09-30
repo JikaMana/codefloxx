@@ -1,7 +1,6 @@
 import { SectionHeader, SectionHeaderCta } from "@/components/SectionHeader";
 import { Button } from "@/components/ui/button";
 import React from "react";
-import { RxChevronRight } from "react-icons/rx";
 
 export function Features() {
   const featureBlocksData = [

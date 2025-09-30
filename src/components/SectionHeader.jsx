@@ -15,7 +15,7 @@ export const SectionHeaderCta = () => (
     <Button
       title="Contact"
       size="lg"
-      className="hover:bg-brand-main h-auto w-max rounded-full bg-transparent px-5 py-2.5 text-lg font-medium text-black shadow-none outline-2 outline-gray-600 hover:text-white"
+      className="hover:bg-brand-main h-auto w-max cursor-pointer rounded-full bg-transparent px-5 py-2.5 text-lg font-medium text-black shadow-none outline-2 outline-gray-600 hover:text-white"
     >
       Learn more
     </Button>
@@ -24,7 +24,7 @@ export const SectionHeaderCta = () => (
       title="Explore"
       size="lg"
       variant="outline"
-      className="hover:bg-brand-main flex h-auto w-max items-center gap-1.5 rounded-full bg-transparent px-5 py-2.5 text-lg font-medium shadow-none hover:text-white"
+      className="hover:bg-brand-main flex h-auto w-max cursor-pointer items-center gap-1.5 rounded-full bg-transparent px-5 py-2.5 text-lg font-medium shadow-none hover:text-white"
     >
       <span>Explore</span>
       <RxChevronRight className="h-4 w-4" />

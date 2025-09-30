@@ -3,7 +3,6 @@
 import { SectionHeader } from "@/components/SectionHeader";
 import { Button } from "@/components/ui/button";
 import React from "react";
-import { RxChevronRight } from "react-icons/rx";
 
 export function Process() {
   const processStepsData = [

@@ -37,7 +37,7 @@ export function Faq() {
           <Button
             title="Contact"
             size="lg"
-            className="hover:bg-brand-main h-auto w-max rounded-full bg-transparent px-5 py-2.5 text-lg font-medium text-black shadow-none outline-2 outline-gray-600 hover:text-white"
+            className="hover:bg-brand-main h-auto w-max cursor-pointer rounded-full bg-transparent px-5 py-2.5 text-lg font-medium text-black shadow-none outline-2 outline-gray-600 hover:text-white"
           >
             Contact
           </Button>

@@ -5,7 +5,6 @@ import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
 import React from "react";
-import { RxChevronRight } from "react-icons/rx";
 import { ProjectGrid } from "./ProjectGrid";
 
 export function Portfolio() {
@@ -27,7 +26,7 @@ export function Portfolio() {
           <Button
             title="View all"
             size="lg"
-            className="hover:bg-brand-main h-auto w-max rounded-full bg-transparent px-5 py-2.5 text-lg font-medium text-black shadow-none outline-2 outline-gray-600 hover:text-white"
+            className="hover:bg-brand-main h-auto w-max cursor-pointer rounded-full bg-transparent px-5 py-2.5 text-lg font-medium text-black shadow-none outline-2 outline-gray-600 hover:text-white"
           >
             View all
           </Button>
