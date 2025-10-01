@@ -24,7 +24,7 @@ export function PricingBreakdown() {
           {pricing.map((item, i) => (
             <div
               key={i}
-              className="rounded-2xl border border-gray-200 bg-white p-6 shadow-lg transition hover:shadow-xl"
+              className="cursor-pointer rounded-2xl border border-gray-200 bg-white p-6 shadow-lg transition hover:shadow-xl"
             >
               <h3 className="mb-2 text-2xl font-bold text-gray-800">
                 {item.category}

@@ -11,10 +11,11 @@ import {
   SelectValue,
 } from "@/components/ui/select";
 import { Textarea } from "@/components/ui/textarea";
-import React from "react";
+import React, { useState } from "react";
 import { BiEnvelope, BiMap, BiPhone } from "react-icons/bi";
 
 export function Contact() {
+  const [privacyPolicyAgreed, setPrivacyPolicyAgreed] = useState(false);
   const roles = [
     { value: "startup", label: "Startup" },
     { value: "enterprise", label: "Enterprise" },
@@ -139,7 +140,6 @@ export function Contact() {
             </div>
           </div>
 
-          {/* Project Topic Select */}
           <div className="grid w-full items-center">
             <Label className="mb-2 font-medium text-gray-700 shadow-none">
               Choose project topic
@@ -159,13 +159,11 @@ export function Contact() {
             </Select>
           </div>
 
-          {/* Audience Radio Group */}
           <div className="grid w-full items-center py-3 md:py-4">
             <Label className="mb-3 font-medium text-gray-700">
               Who are you?
             </Label>
             <RadioGroup className="grid grid-cols-2 gap-x-6 gap-y-3.5">
-              {/* Dynamic RadioGroup Items */}
               {roles.map((role, index) => (
                 <div key={role.value} className="flex items-center space-x-2">
                   <RadioGroupItem value={role.value} id={`role-${index}`} />
@@ -180,7 +178,6 @@ export function Contact() {
             </RadioGroup>
           </div>
 
-          {/* Message Textarea */}
           <div className="grid w-full items-center">
             <Label
               htmlFor="message"
@@ -195,9 +192,13 @@ export function Contact() {
             />
           </div>
 
-          {/* Terms Checkbox */}
           <div className="flex items-start space-x-2 pt-2 text-sm">
-            <Checkbox id="terms" className="mt-1" />
+            <Checkbox
+              id="terms"
+              className="mt-1"
+              checked={privacyPolicyAgreed}
+              onCheckedChange={setPrivacyPolicyAgreed}
+            />
             <Label
               htmlFor="terms"
               className="cursor-pointer leading-normal text-gray-600"
@@ -207,11 +208,11 @@ export function Contact() {
             </Label>
           </div>
 
-          {/* Submit Button */}
           <div className="mt-4">
             <Button
               title="Send Message"
-              className="bg-brand-main hover:bg-brand-main/90 h-12 w-full rounded-xl text-lg font-bold text-white shadow-lg transition-transform hover:scale-[1.01]"
+              disabled={!privacyPolicyAgreed}
+              className="bg-brand-main hover:bg-brand-main/90 h-12 w-full rounded-xl text-lg font-bold text-white shadow-lg transition-transform hover:scale-[1.01] disabled:cursor-not-allowed"
             >
               Send Message
             </Button>

@@ -10,9 +10,6 @@ export function PricingPackages() {
     const priceColor = isRecommended
       ? "text-brand-shade-dark"
       : "text-gray-900";
-    const buttonClass = isRecommended
-      ? "bg-brand-shade-dark text-white font-bold shadow-lg hover:text-brand-main transition-transform hover:bg-brand-secondary hover:scale-[1.01]"
-      : "bg-brand-secondary text-brand-main shadow-lg transition-colors hover:text-white hover:bg-brand-shade-dark";
     const cardClass = isRecommended
       ? "relative flex h-full flex-col justify-between p-8 ring-4 ring-brand-shade-dark/30 rounded-2xl shadow-2xl transition-all duration-300 hover:shadow-indigo-300/60"
       : "flex h-full flex-col justify-between p-8 rounded-2xl shadow-xl transition-shadow hover:shadow-2xl";
@@ -28,7 +25,7 @@ export function PricingPackages() {
         <div>
           <div className="mb-6 flex flex-col items-start"></div>
           <h3 className="mb-1 text-2xl font-bold">{plan.name}</h3>
-          <p className="text-sm text-gray-500">{plan.tagline}</p>
+          <p className="text-base text-gray-500">{plan.tagline}</p>
 
           <div className="my-6">
             <span className={`text-5xl font-extrabold ${priceColor}`}>
@@ -58,15 +55,6 @@ export function PricingPackages() {
               </div>
             ))}
           </div>
-        </div>
-
-        <div className="mt-8">
-          <Button
-            title="Start now"
-            className={`h-12 w-full cursor-pointer rounded-xl ${buttonClass}`}
-          >
-            Choose Plan
-          </Button>
         </div>
       </Card>
     );
