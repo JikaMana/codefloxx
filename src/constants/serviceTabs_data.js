@@ -1,8 +1,8 @@
 export const serviceTabsData = [
   {
     value: "web-development",
-    label: "Web development",
-    category: "Web development",
+    label: "Websites",
+    category: "Websites / Landing Pages",
     headline: "Custom websites that drive engagement and conversions",
     primaryCta: { text: "Learn more", link: "#" },
     secondaryCta: { text: "Mobile apps", link: "#" },

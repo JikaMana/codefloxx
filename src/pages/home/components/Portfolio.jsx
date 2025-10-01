@@ -1,5 +1,3 @@
-"use client";
-
 import { SectionHeader } from "@/components/SectionHeader";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";

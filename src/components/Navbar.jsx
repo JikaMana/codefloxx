@@ -1,5 +1,3 @@
-"use client";
-
 import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
 import { useMediaQuery } from "@/hooks/use-media-query";
@@ -7,6 +5,7 @@ import { AnimatePresence, motion } from "framer-motion";
 import { Menu, X } from "lucide-react";
 import React, { useEffect, useRef, useState } from "react";
 import { RxChevronDown } from "react-icons/rx";
+import { Link } from "react-router-dom";
 
 const useFunctionalities = () => {
   const menuRef = useRef(null);
@@ -105,30 +104,30 @@ export function Navbar() {
               ref={useActive.menuRef}
               className="border-scheme-border bg-brand-main flex w-full flex-col border border-t-0 p-5 pt-0 md:p-8 lg:w-auto lg:flex-row lg:border-none lg:bg-transparent lg:p-0"
             >
-              <a
-                href="#"
-                className="text-regular relative block py-3 text-center text-white lg:px-4 lg:py-2 lg:text-left"
+              <Link
+                to="/"
+                className="text-regular text-brand-shade-dark relative block py-3 text-center lg:px-4 lg:py-2 lg:text-left"
               >
                 Home
-              </a>
-              <a
-                href="#"
-                className="text-regular relative block py-3 text-center text-white lg:px-4 lg:py-2 lg:text-left"
+              </Link>
+              <Link
+                to="/services"
+                className="text-regular text-brand-shade-dark relative block py-3 text-center lg:px-4 lg:py-2 lg:text-left"
               >
                 Services
-              </a>
-              <a
-                href="#"
-                className="text-regular relative block py-3 text-center text-white lg:px-4 lg:py-2 lg:text-left"
+              </Link>
+              <Link
+                to="/project-cases"
+                className="text-regular text-brand-shade-dark relative block py-3 text-center lg:px-4 lg:py-2 lg:text-left"
               >
                 Portfolio
-              </a>
+              </Link>
               <div
                 onMouseEnter={useActive.openOnDesktopDropdownMenu}
                 onMouseLeave={useActive.closeOnDesktopDropdownMenu}
               >
                 <button
-                  className="text-regular flex w-full items-center justify-center gap-0 py-3 text-left text-white lg:flex-none lg:justify-start lg:gap-2 lg:px-4 lg:py-2"
+                  className="text-regular text-brand-shade-dark flex w-full items-center justify-center gap-0 py-3 text-left lg:flex-none lg:justify-start lg:gap-2 lg:px-4 lg:py-2"
                   onClick={useActive.openOnMobileDropdownMenu}
                 >
                   <span>About</span>
@@ -191,17 +190,19 @@ export function Navbar() {
                   title="Quote"
                   variant="outline"
                   size="lg"
-                  className="bg-brand-secondary w-full cursor-pointer rounded-full px-3 py-1.5 font-medium shadow-none"
+                  className="bg-brand-secondary w-full cursor-pointer rounded-full px-3 py-1.5 font-medium shadow-none hover:scale-105"
                 >
                   Quote
                 </Button>
-                <Button
-                  title="Contact"
-                  size="lg"
-                  className="bg-brand-shade-dark w-full cursor-pointer rounded-full px-3 py-1.5 font-medium text-white hover:bg-transparent"
-                >
-                  Contact
-                </Button>
+                <Link to="/contact">
+                  <Button
+                    title="Contact"
+                    size="lg"
+                    className="bg-brand-shade-dark hover:bg-brand-shade-dark hover: w-full cursor-pointer rounded-full px-3 py-1.5 font-medium text-white hover:scale-105"
+                  >
+                    Contact
+                  </Button>
+                </Link>
               </div>
             </div>
           </motion.div>

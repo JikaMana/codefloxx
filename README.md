@@ -21,7 +21,7 @@ Technologies
 
 - React (v19)
 - Vite
-- TailwindCSS (with Relume preset)
+- TailwindCSS
 - Radix primitives for accessible UI
 - Framer Motion for micro-interactions
 - React Router for routing
@@ -74,7 +74,7 @@ Scripts (see [package.json](package.json))
 Configuration
 
 - Vite config: [vite.config.js](vite.config.js)
-- Tailwind config & relume preset: [tailwind.config.js](tailwind.config.js)
+- Tailwind config: [tailwind.config.js](tailwind.config.js)
 - Path aliases are defined in [jsconfig.json](jsconfig.json) and used across the app (e.g. `@/components`, `@/lib`).
 
 Project structure (important folders)

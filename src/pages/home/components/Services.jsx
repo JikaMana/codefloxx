@@ -22,12 +22,12 @@ export function Services() {
             defaultValue="web-development"
             className="w-full overflow-hidden rounded-2xl border-3 border-black"
           >
-            <TabsList className="flex w-full items-stretch bg-transparent p-0">
+            <TabsList className="flex w-full flex-wrap items-stretch bg-transparent p-0">
               {serviceTabsData.map((tab) => (
                 <TabsTrigger
                   key={tab.value}
                   value={tab.value}
-                  className="group relative flex flex-1 cursor-pointer items-center justify-center border-1 border-t-0 border-b-2 border-black bg-transparent px-5 py-12 text-lg font-semibold text-black shadow-none transition-all duration-200 focus-visible:ring-0 focus-visible:ring-offset-0 data-[state=active]:border-0 data-[state=active]:bg-transparent data-[state=active]:text-black data-[state=active]:shadow-none"
+                  className="group relative flex flex-1 cursor-pointer items-center justify-center border-1 border-t-0 border-b-2 border-black bg-transparent px-1 py-6 text-xs font-medium text-black shadow-none transition-all duration-200 focus-visible:ring-0 focus-visible:ring-offset-0 data-[state=active]:border-0 data-[state=active]:bg-transparent data-[state=active]:text-black data-[state=active]:shadow-none sm:px-3 sm:text-sm sm:font-semibold md:px-5 md:py-8 md:text-base lg:py-12 lg:text-lg"
                 >
                   {tab.label}
                 </TabsTrigger>
@@ -38,7 +38,7 @@ export function Services() {
               <TabsContent
                 key={tab.value}
                 value={tab.value}
-                className="mt-0 pt-10 md:pt-12"
+                className="mt-16 pt-10 sm:mt-4 md:mt-0 md:pt-12"
               >
                 <div className="grid grid-cols-1 items-center gap-x-12 gap-y-8 p-6 shadow-lg md:grid-cols-2 md:p-10 lg:p-12 lg:py-16">
                   <div className="flex flex-col items-start">

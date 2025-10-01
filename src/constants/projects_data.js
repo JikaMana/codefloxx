@@ -25,7 +25,7 @@ export const projects = [
       "Modern, responsive school website providing information for students, parents, and staff.",
     tags: ["Web", "Education", "Responsive"],
     image:
-      "https://res.cloudinary.com/deid1vy94/image/upload/v1759156110/codefloxx-city-model-schools-UI_digtwm.webp",
+      "http://res.cloudinary.com/deid1vy94/image/upload/v1759305919/codefloxx-cms-hero_mcbhck.png",
     link: "#",
   },
   {
@@ -44,7 +44,7 @@ export const projects = [
     description:
       "Full startup solution for students – including marketplace, community, and resources, with a dedicated landing page.",
     tags: ["Web", "Startup", "Community"],
-    image: "/images/unihelp.jpg",
+    image: "/assets/home/codefloxx-unihelp-initial.png",
     link: "#",
   },
   {
@@ -53,7 +53,7 @@ export const projects = [
     description:
       "Modern portfolio website to showcase mathematics knowledge and technical skills of an Instructor",
     tags: ["Web", "Learning", "Academics", "Mathematics"],
-    image: "/images/portfolio.jpg",
+    image: "/assets/home/codefloxx-maths-tutor.png",
     link: "#",
   },
 ];

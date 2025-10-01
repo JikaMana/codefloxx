@@ -1,11 +1,12 @@
-import { BrowserRouter, Routes, Route } from 'react-router-dom';
-import AppLayout from './components/ui/AppLayout';
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import AppLayout from "./components/ui/AppLayout";
 
-import Home from './pages/home';
+import Home from "./pages/home";
+import Contact from "./pages/contact";
+
 // import Portfolio from './pages/project-case';
 // import Services from './pages/services';
 // import AboutUs from './pages/about-us';
-// import Contact from './pages/contact';
 // import Maintenance from './pages/maintenance';
 // import WebApplications from './pages/web-applications-development';
 // import MobileApplication from './pages/mobile-application-development';
@@ -16,10 +17,8 @@ function App() {
     <BrowserRouter>
       <Routes>
         <Route element={<AppLayout />}>
-          <Route
-            path="/"
-            element={<Home />}
-          />
+          <Route path="/" element={<Home />} />
+          <Route path="/contact" element={<Contact />} />
           {/* <Route
             path="/portfolio"
             element={<Portfolio />}
@@ -32,10 +31,7 @@ function App() {
             path="/about-us"
             element={<AboutUs />}
           />
-          <Route
-            path="/contact"
-            element={<Contact />}
-          />
+         
           <Route
             path="/maintenance"
             element={<Maintenance />}

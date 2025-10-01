@@ -60,12 +60,12 @@ const tabContentData = [
 
 export const ReasonsTabHeader = () => {
   return (
-    <TabsList className="scrollbar-hidden relative mb-12 flex w-screen flex-nowrap items-center gap-x-6 overflow-x-auto bg-transparent px-[5vw] md:mb-16 md:w-auto md:max-w-full md:px-0">
+    <TabsList className="relative mb-12 flex w-screen flex-nowrap items-center gap-x-6 overflow-x-auto bg-transparent px-[5vw] md:mb-16 md:w-auto md:max-w-full md:px-0">
       {tabHeaders.map((header) => (
         <TabsTrigger
           key={header.value}
           value={header.value}
-          className="text-muted-foreground data-[state=active]:text-foreground data-[state=active]:border-brand-shade-dark rounded-none border-0 border-b-4 bg-transparent px-0 py-2 data-[state=active]:bg-transparent data-[state=inactive]:border-transparent"
+          className="text-muted-foreground data-[state=active]:text-foreground data-[state=active]:border-brand-shade-dark w-full rounded-none border-0 border-t-4 bg-transparent px-0 data-[state=active]:bg-transparent data-[state=active]:shadow-none data-[state=inactive]:border-transparent md:py-2"
         >
           {header.label}
         </TabsTrigger>
