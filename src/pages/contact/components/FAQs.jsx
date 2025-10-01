@@ -13,9 +13,9 @@ export function FAQs() {
   return (
     // Applied a light mint/teal background to the section
     <section className="flex-center bg-teal-50 px-[5%] py-16 md:py-24 lg:py-28">
-      <div className="container">
+      <div className="container flex flex-col items-center">
         {/* HEADER */}
-        <div className="mb-12 max-w-lg md:mb-18 lg:mb-20">
+        <div className="mb-12 max-w-lg text-center md:mb-18 lg:mb-20">
           <h2 className="mb-5 text-4xl font-extrabold md:mb-6 md:text-5xl lg:text-6xl">
             FAQs
           </h2>
@@ -27,7 +27,7 @@ export function FAQs() {
         {/* ACCORDION (FAQs List) */}
         <Accordion
           type="multiple"
-          className="grid items-start justify-stretch gap-4"
+          className="grid w-full max-w-4xl grid-cols-1 gap-4"
         >
           {/* Loop over Accordion Items (using Card for elevation) */}
           {[
@@ -64,18 +64,21 @@ export function FAQs() {
           ].map((item) => (
             <Card
               key={item.id}
-              className="rounded-xl border border-gray-100 bg-white shadow-lg"
+              className="w-full rounded-xl border border-gray-100 bg-white shadow-lg"
             >
-              <AccordionItem value={`item-${item.id}`} className="border-none">
+              <AccordionItem
+                value={`item-${item.id}`}
+                className="w-full border-none"
+              >
                 <AccordionTrigger
-                  className="px-6 py-5 text-lg font-semibold text-gray-800 transition-colors hover:text-teal-600 [&[data-state=open]>svg]:rotate-180"
+                  className="w-full px-6 py-5 text-lg font-semibold text-gray-800 transition-colors hover:text-teal-600 [&[data-state=open]>svg]:rotate-180"
                   icon={
                     <RxPlus className="size-6 shrink-0 text-teal-600 transition-transform duration-300 md:size-7" />
                   }
                 >
                   {item.question}
                 </AccordionTrigger>
-                <AccordionContent className="px-6 pb-6 text-base text-gray-600">
+                <AccordionContent className="w-full px-6 pb-6 text-base text-gray-600">
                   {item.answer}
                 </AccordionContent>
               </AccordionItem>
@@ -94,7 +97,7 @@ export function FAQs() {
           <div className="mt-6">
             <Button
               title="Contact Us"
-              className="h-12 rounded-xl bg-teal-600 px-8 font-bold text-white shadow-lg shadow-teal-500/50 hover:bg-teal-700"
+              className="mx-auto h-12 w-full rounded-xl bg-teal-600 px-8 font-bold text-white shadow-lg shadow-teal-500/50 hover:bg-teal-700"
             >
               Contact Us
             </Button>
@@ -104,13 +107,3 @@ export function FAQs() {
     </section>
   );
 }
-// ```eof
-
-// I've made the following key professional improvements:
-
-// * **Background:** Used `bg-teal-50` for a soft, professional backdrop (similar to the provided image).
-// * **Accordion Items:** Each is wrapped in a `Card` with `rounded-xl` and a `shadow-lg` for that clean, elevated look.
-// * **Trigger Styling:** Increased font size/weight and added a subtle `hover:text-teal-600`.
-// * **Icon Accent:** The `RxPlus` icon is colored with **`text-teal-600`** to serve as the primary accent color.
-// * **Content Readability:** The `AccordionContent` is styled with `text-gray-600` for excellent readability.
-// * **CTA Section:** This section is also enclosed in a white, elevated card (`bg-white shadow-xl`) to clearly separate it from the main FAQ list, and the button uses a strong teal color for a confident call-to-action.

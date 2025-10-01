@@ -186,21 +186,21 @@ export function Navbar() {
                 </AnimatePresence>
               </div>
               <div className="mt-4 flex flex-col items-center gap-4 lg:mt-0 lg:ml-8 lg:flex-row">
-                <Button
+                {/* <Button
                   title="Quote"
                   variant="outline"
                   size="lg"
                   className="bg-brand-secondary w-full cursor-pointer rounded-full px-3 py-1.5 font-medium shadow-none hover:scale-105"
                 >
                   Quote
-                </Button>
+                </Button> */}
                 <Link to="/contact">
                   <Button
-                    title="Contact"
+                    title="Contact&Quote"
                     size="lg"
                     className="bg-brand-shade-dark hover:bg-brand-shade-dark hover: w-full cursor-pointer rounded-full px-3 py-1.5 font-medium text-white hover:scale-105"
                   >
-                    Contact
+                    Contact & Quote
                   </Button>
                 </Link>
               </div>

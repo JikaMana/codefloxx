@@ -63,7 +63,7 @@ export function PricingPackages() {
         <div className="mt-8">
           <Button
             title="Start now"
-            className={`h-12 w-full rounded-xl ${buttonClass}`}
+            className={`h-12 w-full cursor-pointer rounded-xl ${buttonClass}`}
           >
             Choose Plan
           </Button>
@@ -86,7 +86,7 @@ export function PricingPackages() {
     {
       name: "Standard",
       tagline: "Ideal for growing web applications.",
-      monthly: 29,
+      monthly: 39,
       features: [
         "Advanced web application",
         "Custom UI/UX design",
@@ -97,7 +97,7 @@ export function PricingPackages() {
     {
       name: "Premium",
       tagline: "Full-scale development and dedicated support.",
-      monthly: 49,
+      monthly: 69,
       features: [
         "Full stack development",
         "Complex system integration",
@@ -113,7 +113,7 @@ export function PricingPackages() {
       name: "Starter",
       tagline: "For basic projects and prototypes.",
       yearly: 180,
-      savings: "Save $48 (20%)",
+      savings: "Save $48 (~20%)",
       features: [
         "Basic website development",
         "Standard UI design",
@@ -123,8 +123,8 @@ export function PricingPackages() {
     {
       name: "Standard",
       tagline: "Ideal for growing web applications.",
-      yearly: 280,
-      savings: "Save $68 (20%)",
+      yearly: 370,
+      savings: "Save $98 (~20%)",
       features: [
         "Advanced web application",
         "Custom UI/UX design",
@@ -135,8 +135,8 @@ export function PricingPackages() {
     {
       name: "Premium",
       tagline: "Full-scale development and dedicated support.",
-      yearly: 480,
-      savings: "Save $108 (20%)",
+      yearly: 660,
+      savings: "Save $168 (~20%)",
       features: [
         "Full stack development",
         "Complex system integration",

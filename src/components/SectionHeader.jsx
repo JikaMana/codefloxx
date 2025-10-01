@@ -1,6 +1,8 @@
 import React from "react";
 import { Button } from "@/components/ui/button";
 import { RxChevronRight } from "react-icons/rx";
+import { Link } from "react-router-dom";
+import { HashLink } from "react-router-hash-link/dist/react-router-hash-link.cjs.production";
 
 /**
  * Reusable component for displaying centered section headings and an optional CTA block.
@@ -12,23 +14,26 @@ import { RxChevronRight } from "react-icons/rx";
 
 export const SectionHeaderCta = ({ btn1, btn2 }) => (
   <div className="flex-center mt-6 gap-x-4 md:mt-8">
-    <Button
-      title="Contact"
-      size="lg"
-      className="hover:bg-brand-main h-auto w-max cursor-pointer rounded-full bg-transparent px-5 py-2.5 text-lg font-medium text-black shadow-none outline-2 outline-gray-600 hover:text-white"
-    >
-      {btn1}
-    </Button>
-
-    <Button
-      title="Explore"
-      size="lg"
-      variant="outline"
-      className="hover:bg-brand-main flex h-auto w-max cursor-pointer items-center gap-1.5 rounded-full bg-transparent px-5 py-2.5 text-lg font-medium shadow-none hover:text-white"
-    >
-      <span>{btn2}</span>
-      <RxChevronRight className="h-4 w-4" />
-    </Button>
+    <HashLink smooth to={`#${btn1}`}>
+      <Button
+        title="Contact"
+        size="lg"
+        className="hover:bg-brand-main h-auto w-max cursor-pointer rounded-full bg-transparent px-5 py-2.5 text-lg font-medium text-black shadow-none outline-2 outline-gray-600 hover:text-white"
+      >
+        {btn1}
+      </Button>
+    </HashLink>
+    <HashLink smooth to={`#${btn2}`}>
+      <Button
+        title="Explore"
+        size="lg"
+        variant="outline"
+        className="hover:bg-brand-main flex h-auto w-max cursor-pointer items-center gap-1.5 rounded-full bg-transparent px-5 py-2.5 text-lg font-medium shadow-none hover:text-white"
+      >
+        <span>{btn2}</span>
+        <RxChevronRight className="h-4 w-4" />
+      </Button>
+    </HashLink>
   </div>
 );
 export function SectionHeader({
