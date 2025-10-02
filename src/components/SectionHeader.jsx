@@ -12,13 +12,13 @@ import { HashLink } from "react-router-hash-link/dist/react-router-hash-link.cjs
  * @param {boolean} [showCta=false] - If true, displays the two CTA buttons.
  */
 
-export const SectionHeaderCta = ({ btn1, btn2 }) => (
+export const SectionHeaderCta = ({ btn1, btn2, whiteTexts }) => (
   <div className="flex-center mt-6 gap-x-4 md:mt-8">
     <HashLink smooth to={`#${btn1}`}>
       <Button
         title="Contact"
         size="lg"
-        className="hover:bg-brand-main h-auto w-max cursor-pointer rounded-full bg-transparent px-5 py-2.5 text-lg font-medium text-black shadow-none outline-2 outline-gray-600 hover:text-white"
+        className={`hover:bg-brand-main h-auto w-max cursor-pointer rounded-full bg-transparent px-5 py-2.5 text-lg font-medium text-black shadow-none outline-2 outline-gray-400 hover:text-white ${whiteTexts ? "bg-brand-shade-dark text-white outline-none" : ""}`}
       >
         {btn1}
       </Button>
@@ -28,10 +28,10 @@ export const SectionHeaderCta = ({ btn1, btn2 }) => (
         title="Explore"
         size="lg"
         variant="outline"
-        className="hover:bg-brand-main flex h-auto w-max cursor-pointer items-center gap-1.5 rounded-full bg-transparent px-5 py-2.5 text-lg font-medium shadow-none hover:text-white"
+        className={`hover:bg-brand-main flex h-auto w-max cursor-pointer items-center gap-1.5 rounded-full bg-transparent px-5 py-2.5 text-lg font-medium shadow-none hover:text-white ${whiteTexts ? "hover:bg-brand-shade-dark hover:border-brand-shade-dark border-black text-black" : ""}`}
       >
         <span>{btn2}</span>
-        <RxChevronRight className="h-4 w-4" />
+        {!whiteTexts && <RxChevronRight className="h-4 w-4" />}
       </Button>
     </HashLink>
   </div>
@@ -40,6 +40,7 @@ export function SectionHeader({
   tagline,
   title,
   description,
+  whiteTexts = false,
   showCta = false,
   className,
   btn1 = "Learn More",
@@ -55,7 +56,9 @@ export function SectionHeader({
 
       <p className="text-xl tracking-wide">{description}</p>
 
-      {showCta && <SectionHeaderCta btn1={btn1} btn2={btn2} />}
+      {showCta && (
+        <SectionHeaderCta btn1={btn1} btn2={btn2} whiteTexts={whiteTexts} />
+      )}
     </div>
   );
 }

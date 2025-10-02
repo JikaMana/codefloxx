@@ -1,0 +1,63 @@
+import { SectionHeader } from "@/components/SectionHeader";
+import { Card } from "@/components/ui/card";
+import { servicestestimonialsData } from "@/constants/testimonials_data";
+import React from "react";
+import { BiSolidStar } from "react-icons/bi";
+
+const renderStars = (rating) => {
+  return Array.from({ length: 5 }, (_, index) => (
+    <BiSolidStar
+      key={index}
+      className={`mr-1 size-6 ${
+        index < rating ? "text-teal-500" : "text-gray-300"
+      }`}
+    />
+  ));
+};
+
+export function Testimonials() {
+  return (
+    <section className="flex-center bg-brand-shade-light px-[5%] py-16 md:py-24 lg:py-28">
+      <div className="container">
+        <div className="mx-auto mb-12 w-full max-w-lg text-center md:mb-18 lg:mb-20">
+          <SectionHeader
+            tagline="Client voices"
+            title="Real stories from businesses we've transformed."
+            description=""
+            showCta={false}
+          />
+        </div>
+        <div className="grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-3">
+          {servicestestimonialsData.map((testimonial, index) => (
+            <Card
+              key={index}
+              className="flex w-full flex-col items-start justify-between border-2 border-gray-400 bg-transparent p-6 shadow-md md:p-8"
+            >
+              <div className="mb-5 md:mb-6">
+                <div className="mb-5 flex md:mb-6">
+                  {renderStars(testimonial.rating)}
+                </div>
+                <blockquote className="text-medium text-gray-700">
+                  {`"${testimonial.quote}"`}
+                </blockquote>
+              </div>
+              <div className="mt-5 flex w-full flex-col items-start md:mt-6 md:w-fit md:flex-row md:items-center">
+                <img
+                  src={testimonial.avatar}
+                  alt={`${testimonial.name} avatar`}
+                  className="mb-4 size-12 min-h-12 min-w-12 rounded-full object-cover md:mr-4 md:mb-0"
+                />
+                <div>
+                  <p className="font-semibold text-gray-900">
+                    {testimonial.name}
+                  </p>
+                  <p className="text-gray-500">{testimonial.title}</p>
+                </div>
+              </div>
+            </Card>
+          ))}
+        </div>
+      </div>
+    </section>
+  );
+}

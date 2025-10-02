@@ -64,7 +64,7 @@ export function Navbar() {
         <a href="#">
           <img
             src="/codefloxx.svg"
-            className="h-24 w-24"
+            className="h-20 w-20 md:h-24 md:w-24"
             alt="Codefloxx Logo image"
           />
         </a>
@@ -166,19 +166,19 @@ export function Navbar() {
                   >
                     <a
                       href="#"
-                      className="text-regular hover:bg-brand-shade-dark block rounded-lg py-3 text-center font-medium lg:px-4 lg:py-2 lg:text-left"
+                      className="text-regular hover:bg-brand-shade-dark block rounded-lg py-3 text-center font-medium hover:text-white lg:px-4 lg:py-2 lg:text-left"
                     >
                       About Us
                     </a>
                     <a
                       href="#"
-                      className="text-regular hover:bg-brand-shade-dark block rounded-lg py-3 text-center font-medium lg:px-4 lg:py-2 lg:text-left"
+                      className="text-regular hover:bg-brand-shade-dark block rounded-lg py-3 text-center font-medium hover:text-white lg:px-4 lg:py-2 lg:text-left"
                     >
                       Pricing
                     </a>
                     <a
                       href="#"
-                      className="text-regular hover:bg-brand-shade-dark block rounded-lg py-3 text-center font-medium lg:px-4 lg:py-2 lg:text-left"
+                      className="text-regular hover:bg-brand-shade-dark block rounded-lg py-3 text-center font-medium hover:text-white lg:px-4 lg:py-2 lg:text-left"
                     >
                       Consultation
                     </a>

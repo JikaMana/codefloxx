@@ -154,7 +154,9 @@ export function Contact() {
                   Mobile App (iOS/Android)
                 </SelectItem>
                 <SelectItem value="ui-ux">UI/UX Design</SelectItem>
-                <SelectItem value="ui-ux">Website Redesign</SelectItem>
+                <SelectItem value="website-redesign">
+                  Website Redesign
+                </SelectItem>
               </SelectContent>
             </Select>
           </div>

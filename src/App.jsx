@@ -3,9 +3,9 @@ import AppLayout from "./components/ui/AppLayout";
 
 import Home from "./pages/home";
 import Contact from "./pages/contact";
+import Services from "./pages/services";
 
 // import Portfolio from './pages/project-case';
-// import Services from './pages/services';
 // import AboutUs from './pages/about-us';
 // import Maintenance from './pages/maintenance';
 // import WebApplications from './pages/web-applications-development';
@@ -19,14 +19,12 @@ function App() {
         <Route element={<AppLayout />}>
           <Route path="/" element={<Home />} />
           <Route path="/contact" element={<Contact />} />
+          <Route path="/services" element={<Services />} />
           {/* <Route
             path="/portfolio"
             element={<Portfolio />}
           /> 
-          <Route
-            path="/services"
-            element={<Services />}
-          />
+         
           <Route
             path="/about-us"
             element={<AboutUs />}
