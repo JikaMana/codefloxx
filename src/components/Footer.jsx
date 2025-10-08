@@ -66,7 +66,10 @@ export function Footer() {
             </div>
           </div>
         </div>
-        <div className="mb-12 grid grid-cols-1 items-start gap-x-8 gap-y-10 sm:grid-cols-3 md:mb-18 md:gap-y-12 lg:mb-20 lg:grid-cols-6">
+
+        {/* Main Footer Links Grid (Updated to include Locations) */}
+        <div className="mb-12 grid grid-cols-1 items-start gap-x-8 gap-y-10 sm:grid-cols-3 md:mb-18 md:gap-y-12 lg:mb-20 lg:grid-cols-6 xl:grid-cols-7">
+          {/* 1. Logo */}
           <a href="#">
             <img
               src="/codefloxx.svg"
@@ -74,6 +77,8 @@ export function Footer() {
               alt="Codefloxx Logo image"
             />
           </a>
+
+          {/* 2. Services */}
           <div className="flex flex-col items-start justify-start">
             <h2 className="mb-3 font-semibold md:mb-4">Services</h2>
             <ul>
@@ -104,6 +109,8 @@ export function Footer() {
               </li>
             </ul>
           </div>
+
+          {/* 3. Company */}
           <div className="flex flex-col items-start justify-start">
             <h2 className="mb-3 font-semibold md:mb-4">Company</h2>
             <ul>
@@ -129,11 +136,13 @@ export function Footer() {
               </li>
               <li className="py-2 text-sm">
                 <a href="#" className="flex items-center gap-3">
-                  Resources
+                  Skills Shop
                 </a>
               </li>
             </ul>
           </div>
+
+          {/* 4. Case studies */}
           <div className="flex flex-col items-start justify-start">
             <h2 className="mb-3 font-semibold md:mb-4">Case studies</h2>
             <ul>
@@ -164,14 +173,36 @@ export function Footer() {
               </li>
             </ul>
           </div>
+
+          {/* 5. Locations (NEW COLUMN) */}
+          <div className="flex flex-col items-start justify-start">
+            <h2 className="mb-3 font-semibold md:mb-4">Locations</h2>
+            <ul>
+              <li className="py-2 text-sm">
+                <p className="mb-1 font-semibold">Port Harcourt</p>
+                <p className="text-xs leading-relaxed opacity-75">
+                  Beside Mife Constructions, Rivers State
+                </p>
+              </li>
+              <li className="py-2 text-sm">
+                <p className="mb-1 font-semibold">Abuja</p>
+                <p className="text-xs leading-relaxed opacity-75">
+                  I.V.W. Osisiogu Street, Utako, Federal Capital Territory
+                </p>
+              </li>
+              <li className="py-2 text-sm">
+                <p className="mb-1 font-semibold">Ado Ekiti</p>
+                <p className="text-xs leading-relaxed opacity-75">
+                  Inside Afe Babalola University, Ekiti State
+                </p>
+              </li>
+            </ul>
+          </div>
+
+          {/* 6. Socials */}
           <div className="flex flex-col items-start justify-start">
             <h2 className="mb-3 font-semibold md:mb-4">Socials</h2>
             <ul>
-              <li className="py-2 text-sm">
-                <a href="#" className="flex items-center gap-3">
-                  GitHub
-                </a>
-              </li>
               <li className="py-2 text-sm">
                 <a href="#" className="flex items-center gap-3">
                   Instagram
@@ -194,37 +225,9 @@ export function Footer() {
               </li>
             </ul>
           </div>
-          <div className="flex flex-col items-start justify-start">
-            <h2 className="mb-3 font-semibold md:mb-4">Privacy</h2>
-            <ul>
-              <li className="py-2 text-sm">
-                <a href="#" className="flex items-center gap-3">
-                  Cookies
-                </a>
-              </li>
-              <li className="py-2 text-sm">
-                <a href="#" className="flex items-center gap-3">
-                  Sitemap
-                </a>
-              </li>
-              <li className="py-2 text-sm">
-                <a href="#" className="flex items-center gap-3">
-                  Accessibility
-                </a>
-              </li>
-              {/* <li className="text-sm py-2">
-                <a href="#" className="flex items-center gap-3">
-                  Social
-                </a>
-              </li>
-              <li className="text-sm py-2">
-                <a href="#" className="flex items-center gap-3">
-                  LinkedIn
-                </a>
-              </li> */}
-            </ul>
-          </div>
         </div>
+
+        {/* Separator and Bottom Bar */}
         <div className="bg-scheme-border h-px w-full" />
         <div className="flex flex-col-reverse items-start pt-6 pb-4 text-sm md:justify-start md:pt-8 md:pb-0 lg:flex-row lg:items-center lg:justify-between">
           <div className="flex flex-col-reverse items-start md:flex-row md:gap-6 lg:items-center">

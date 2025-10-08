@@ -61,13 +61,13 @@ export function Navbar() {
   return (
     <section className="fixed inset-0 bottom-auto z-[999] mx-auto mt-5 flex w-full px-[5%] md:mt-6 lg:mx-[5%] lg:w-auto lg:px-0">
       <Card className="max-w-xxl bg-brand-main mx-auto flex min-h-12 w-full items-center justify-between gap-x-4 gap-y-4 overflow-visible rounded-b-none px-5 backdrop-blur-sm md:min-h-18 md:px-8 lg:rounded-b-xl lg:bg-transparent">
-        <a href="#">
+        <Link href="#">
           <img
             src="/codefloxx.svg"
             className="h-20 w-20 md:h-24 md:w-24"
             alt="Codefloxx Logo image"
           />
-        </a>
+        </Link>
         <button
           ref={useActive.buttonRef}
           className="-mr-2 flex size-12 cursor-pointer flex-col items-center justify-center lg:hidden"
@@ -106,28 +106,28 @@ export function Navbar() {
             >
               <Link
                 to="/"
-                className="text-regular text-brand-shade-dark relative block py-3 text-center lg:px-4 lg:py-2 lg:text-left"
+                className="text-regular relative block py-3 text-center text-white lg:px-4 lg:py-2 lg:text-left"
               >
                 Home
               </Link>
               <Link
                 to="/services"
-                className="text-regular text-brand-shade-dark relative block py-3 text-center lg:px-4 lg:py-2 lg:text-left"
+                className="text-regular relative block py-3 text-center text-white lg:px-4 lg:py-2 lg:text-left"
               >
                 Services
               </Link>
               <Link
                 to="/project-cases"
-                className="text-regular text-brand-shade-dark relative block py-3 text-center lg:px-4 lg:py-2 lg:text-left"
+                className="text-regular relative block py-3 text-center text-white lg:px-4 lg:py-2 lg:text-left"
               >
-                Portfolio
+                Project Cases
               </Link>
               <div
                 onMouseEnter={useActive.openOnDesktopDropdownMenu}
                 onMouseLeave={useActive.closeOnDesktopDropdownMenu}
               >
                 <button
-                  className="text-regular text-brand-shade-dark flex w-full items-center justify-center gap-0 py-3 text-left lg:flex-none lg:justify-start lg:gap-2 lg:px-4 lg:py-2"
+                  className="text-regular flex w-full items-center justify-center gap-0 py-3 text-left text-white lg:flex-none lg:justify-start lg:gap-2 lg:px-4 lg:py-2"
                   onClick={useActive.openOnMobileDropdownMenu}
                 >
                   <span>About</span>
@@ -139,7 +139,7 @@ export function Navbar() {
                     animate={useActive.animateDropdownMenuIcon}
                     transition={{ duration: 0.3 }}
                   >
-                    <RxChevronDown className="size-6" strokeWidth={1} />
+                    <RxChevronDown className="size-6" strokeWidth={0.5} />
                   </motion.span>
                 </button>
                 <AnimatePresence>
@@ -164,24 +164,19 @@ export function Navbar() {
                     transition={{ duration: 0.2 }}
                     className="lg:border-scheme-border bg-brand-secondary rounded-lg lg:absolute lg:z-50 lg:border lg:p-1 lg:[--height:auto] lg:[--y-close:25%]"
                   >
-                    <a
-                      href="#"
+                    <Link
+                      to="/about-us"
                       className="text-regular hover:bg-brand-shade-dark block rounded-lg py-3 text-center font-medium hover:text-white lg:px-4 lg:py-2 lg:text-left"
                     >
                       About Us
-                    </a>
-                    <a
-                      href="#"
-                      className="text-regular hover:bg-brand-shade-dark block rounded-lg py-3 text-center font-medium hover:text-white lg:px-4 lg:py-2 lg:text-left"
-                    >
-                      Pricing
-                    </a>
-                    <a
-                      href="#"
+                    </Link>
+
+                    {/* <Link
+                      to="#"
                       className="text-regular hover:bg-brand-shade-dark block rounded-lg py-3 text-center font-medium hover:text-white lg:px-4 lg:py-2 lg:text-left"
                     >
                       Consultation
-                    </a>
+                    </Link> */}
                   </motion.nav>
                 </AnimatePresence>
               </div>

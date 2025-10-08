@@ -60,7 +60,7 @@ const tabContentData = [
 
 export const ReasonsTabHeader = () => {
   return (
-    <TabsList className="relative mb-12 flex w-screen flex-nowrap items-center gap-x-6 overflow-x-auto bg-transparent px-[5vw] md:mb-16 md:w-auto md:max-w-full md:px-0">
+    <TabsList className="relative mb-12 flex w-screen flex-nowrap items-center gap-x-6 overflow-hidden overflow-x-auto bg-transparent px-[5vw] md:mb-16 md:w-auto md:max-w-full md:px-0">
       {tabHeaders.map((header) => (
         <TabsTrigger
           key={header.value}

@@ -15,7 +15,8 @@ export const projects = [
     description:
       "Cross-platform React Native app for recycling and waste management.",
     tags: ["Mobile", "React Native", "Expo"],
-    image: "/images/recyclo-app.jpg",
+    image:
+      "https://res.cloudinary.com/deid1vy94/image/upload/v1759436107/codefloxx-recyclo-poster_hvbt4i.png",
     link: "#",
   },
   {

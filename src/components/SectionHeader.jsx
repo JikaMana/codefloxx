@@ -16,7 +16,7 @@ export const SectionHeaderCta = ({ btn1, btn2, whiteTexts }) => (
   <div className="flex-center mt-6 gap-x-4 md:mt-8">
     <HashLink smooth to={`#${btn1}`}>
       <Button
-        title="Contact"
+        title={btn1 || "Contact"}
         size="lg"
         className={`hover:bg-brand-main h-auto w-max cursor-pointer rounded-full bg-transparent px-5 py-2.5 text-lg font-medium text-black shadow-none outline-2 outline-gray-400 hover:text-white ${whiteTexts ? "bg-brand-shade-dark text-white outline-none" : ""}`}
       >
@@ -25,10 +25,10 @@ export const SectionHeaderCta = ({ btn1, btn2, whiteTexts }) => (
     </HashLink>
     <HashLink smooth to={`#${btn2}`}>
       <Button
-        title="Explore"
+        title={btn2 || "Explore"}
         size="lg"
         variant="outline"
-        className={`hover:bg-brand-main flex h-auto w-max cursor-pointer items-center gap-1.5 rounded-full bg-transparent px-5 py-2.5 text-lg font-medium shadow-none hover:text-white ${whiteTexts ? "hover:bg-brand-shade-dark hover:border-brand-shade-dark border-black text-black" : ""}`}
+        className={`hover:bg-brand-main flex h-auto w-max cursor-pointer items-center gap-1.5 rounded-full bg-transparent px-5 py-2.5 text-lg font-medium shadow-none hover:text-white ${whiteTexts ? "hover:bg-brand-shade-dark hover:border-brand-shade-dark border-white text-white" : ""}`}
       >
         <span>{btn2}</span>
         {!whiteTexts && <RxChevronRight className="h-4 w-4" />}

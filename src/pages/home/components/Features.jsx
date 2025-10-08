@@ -62,7 +62,7 @@ export function Features() {
               </div>
             ))}
           </div>
-          <SectionHeaderCta />
+          <SectionHeaderCta btn1="Learn More" btn2="Explore" />
         </div>
       </div>
     </section>

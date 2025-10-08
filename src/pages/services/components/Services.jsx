@@ -68,7 +68,7 @@ const ServiceCard = ({ service, isFeatured }) => {
         <Button
           size="sm"
           variant="ghost"
-          className="hover:bg-brand-main flex h-auto w-max cursor-pointer items-center gap-1.5 rounded-full px-3 py-1 text-base font-medium text-teal-400 hover:text-white"
+          className="hover:bg-brand-main flex h-auto w-max cursor-pointer items-center gap-1.5 rounded-full px-0 py-1 text-base font-medium text-teal-400 hover:text-white"
         >
           <span>{service.primaryCta?.text.split(" ")[0] || "Explore"}</span>
           <RxChevronRight className="h-4 w-4" />

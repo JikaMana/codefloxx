@@ -19,11 +19,11 @@ export function Testimonials() {
   return (
     <section className="flex-center bg-brand-shade-light px-[5%] py-16 md:py-24 lg:py-28">
       <div className="container">
-        <div className="mx-auto mb-12 w-full max-w-lg text-center md:mb-18 lg:mb-20">
+        <div className="mx-auto mb-12 w-full text-center md:mb-18 lg:mb-20">
           <SectionHeader
             tagline=""
-            title="Client voices"
-            description="Real stories from businesses we've helped transform digitally"
+            title="Client testimonials"
+            description="What our clients say about working with Code Floxx"
             showCta={false}
           />
         </div>
