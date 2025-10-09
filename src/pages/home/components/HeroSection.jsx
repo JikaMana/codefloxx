@@ -6,7 +6,7 @@ const HeroSection = () => {
     <div className="bg-brand-main flex min-h-screen flex-col lg:h-screen lg:flex-row">
       <div className="order-1 flex h-full flex-1 items-center justify-center p-8 text-white lg:w-1/2 lg:p-16">
         <div className="container flex h-full max-w-xl flex-col justify-center text-center lg:text-left">
-          <h1 className="mt-[120px] text-5xl leading-tight font-extrabold tracking-tighter md:text-6xl lg:text-7xl lg:leading-[4.5rem]">
+          <h1 className="mt-[120px] text-5xl leading-tight font-extrabold tracking-tighter md:text-6xl lg:text-7xl">
             Digital solutions built with precision and passion
           </h1>
 
@@ -21,7 +21,7 @@ const HeroSection = () => {
               title="Quote"
               size="xl"
               onClick={() => console.log("Primary CTA clicked")}
-              className="bg-brand-shade-dark w-max rounded-full border-2 border-transparent px-5 py-2.5 text-lg font-medium shadow-none hover:border-white hover:bg-transparent"
+              className="bg-brand-shade-dark w-max cursor-pointer rounded-full border-2 border-transparent px-5 py-2.5 text-lg font-medium shadow-none hover:border-white hover:bg-transparent"
             >
               Quote
             </Button>
@@ -30,7 +30,7 @@ const HeroSection = () => {
               size="xl"
               variant="outline"
               onClick={() => console.log("Secondary CTA clicked")}
-              className="w-max rounded-full bg-transparent px-5 py-2.5 text-lg font-medium shadow-none hover:bg-white hover:text-black"
+              className="w-max cursor-pointer rounded-full bg-transparent px-5 py-2.5 text-lg font-medium shadow-none hover:bg-white hover:text-black"
             >
               Contact
             </Button>
