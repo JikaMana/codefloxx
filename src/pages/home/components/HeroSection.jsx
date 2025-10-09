@@ -4,13 +4,13 @@ import { Card, CardContent } from "@/components/ui/card";
 const HeroSection = () => {
   return (
     <div className="bg-brand-main flex min-h-screen flex-col lg:h-screen lg:flex-row">
-      <div className="order-1 flex flex-1 items-center justify-center p-8 text-white lg:w-1/2 lg:p-16">
-        <div className="container max-w-xl text-center lg:text-left">
-          <h1 className="mt-[120px] text-5xl leading-tight font-extrabold tracking-tighter md:text-6xl lg:text-7xl">
+      <div className="order-1 flex h-full flex-1 items-center justify-center p-8 text-white lg:w-1/2 lg:p-16">
+        <div className="container flex h-full max-w-xl flex-col justify-center text-center lg:text-left">
+          <h1 className="mt-[120px] text-5xl leading-tight font-extrabold tracking-tighter md:text-6xl lg:text-7xl lg:leading-[4.5rem]">
             Digital solutions built with precision and passion
           </h1>
 
-          <p className="mt-6 text-xl">
+          <p className="mt-6 text-lg md:text-xl">
             We craft scalable software that transforms your business vision into
             reality. Our team of expert developers delivers innovative digital
             products tailored to your unique needs.

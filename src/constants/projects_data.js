@@ -7,7 +7,7 @@ export const projects = [
     tags: ["Web", "Ecommerce", "Retail"],
     image:
       "https://res.cloudinary.com/deid1vy94/image/upload/v1759155422/codefloxx-bilma-scents-project_zyu5cj.webp",
-    link: "#",
+    link: "https://bilma-scents.vercel.app/",
   },
   {
     id: 2,
@@ -37,7 +37,7 @@ export const projects = [
     tags: ["Web", "CSR", "Recycling", "Waste Disposal"],
     image:
       "https://res.cloudinary.com/deid1vy94/image/upload/v1759155415/codefloxx-tripleR-project_qjpmil.webp",
-    link: "#",
+    link: "https://triplerrecyclingltd.com/",
   },
   {
     id: 5,
@@ -46,7 +46,7 @@ export const projects = [
       "Full startup solution for students – including marketplace, community, and resources, with a dedicated landing page.",
     tags: ["Web", "Startup", "Community"],
     image: "/assets/home/codefloxx-unihelp-initial.png",
-    link: "#",
+    link: "https://uni-help-dun.vercel.app/",
   },
   {
     id: 6,
