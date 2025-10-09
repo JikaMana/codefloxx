@@ -9,7 +9,11 @@ export function EcosystemSupport() {
       <div className="container">
         <div className="grid grid-cols-1 gap-y-12 md:grid-cols-2 md:items-center md:gap-x-12 lg:gap-x-20">
           <div>
-            <img src="/assets/codefloxx-ecosystem-icon.jpeg" alt="Ecosystem" />
+            <img
+              loading="lazy"
+              src="/assets/codefloxx-ecosystem-icon.jpeg"
+              alt="Ecosystem"
+            />
             <SectionHeader
               tagline=""
               title="Continuous support for your digital ecosystem"
@@ -39,6 +43,7 @@ export function EcosystemSupport() {
           </div>
           <div className="max-h-[588px] w-full overflow-hidden rounded-xl shadow-lg">
             <img
+              loading="lazy"
               src="https://res.cloudinary.com/deid1vy94/image/upload/v1759412162/codefloxx-ecosystem-supports_rftgwz.avif"
               className="h-full w-full object-cover"
               alt="Descriptive image for ecosystem supports"

@@ -80,6 +80,7 @@ export function Services() {
                   {/* Right Image Area */}
                   <div className="flex justify-center md:justify-end">
                     <img
+                      loading="lazy"
                       src={tab.imageSrc}
                       alt={tab.imageAlt}
                       className="aspect-auto h-[400px] w-full rounded-2xl object-cover shadow-md md:h-[600px] md:w-[500px]"

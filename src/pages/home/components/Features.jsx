@@ -50,6 +50,7 @@ export function Features() {
               >
                 <div className="mb-6 aspect-[4/3] w-full overflow-hidden rounded-2xl md:mb-8">
                   <img
+                    loading="lazy"
                     src={feature.imageSrc}
                     alt={feature.imageAlt}
                     className="rounded-image h-full w-full object-cover"

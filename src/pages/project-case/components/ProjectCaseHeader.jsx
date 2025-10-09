@@ -36,6 +36,7 @@ export function ProjectCaseHeader() {
         </div>
         <div className="overflow-hidden rounded-t-[64px]">
           <img
+            loading="lazy"
             src="https://res.cloudinary.com/deid1vy94/image/upload/v1759421538/codefloxx-project-case-banner_d2gnro.webp"
             alt="Project Case Sample"
             className="rounded-image w-full"

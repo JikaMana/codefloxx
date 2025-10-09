@@ -43,6 +43,7 @@ export function Testimonials() {
               </div>
               <div className="mt-5 flex w-full flex-col items-start md:mt-6 md:w-fit md:flex-row md:items-center">
                 <img
+                  loading="lazy"
                   src={testimonial.avatar}
                   alt={`${testimonial.name} avatar`}
                   className="mb-4 size-12 min-h-12 min-w-12 rounded-full object-cover md:mr-4 md:mb-0"

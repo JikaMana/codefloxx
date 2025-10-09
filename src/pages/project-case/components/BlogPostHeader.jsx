@@ -38,6 +38,7 @@ export function BlogPostHeader() {
             <div className="mb-4 flex items-center sm:mb-0">
               <div className="mr-4 shrink-0">
                 <img
+                  loading="lazy"
                   src="https://res.cloudinary.com/deid1vy94/image/upload/v1759421539/codefloxx-project-case-study-case_dvdp1a.webp"
                   alt="Codefloxx Project Study case"
                   className="size-14 min-h-14 min-w-14 rounded-full object-cover"
@@ -82,6 +83,7 @@ export function BlogPostHeader() {
         </div>
         <div className="mx-auto w-full max-w-[768px] overflow-hidden rounded-2xl">
           <img
+            loading="lazy"
             src="https://res.cloudinary.com/deid1vy94/image/upload/v1759421539/codefloxx-project-case-study-case_dvdp1a.webp"
             className="rounded-image aspect-[2] size-full object-cover"
             alt="Placeholder image"

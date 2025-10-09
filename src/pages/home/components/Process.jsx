@@ -62,6 +62,7 @@ export function Process() {
             >
               <div className="mb-4 aspect-video overflow-hidden rounded-xl md:mb-8 md:w-full md:rounded-2xl lg:mb-6">
                 <img
+                  loading="lazy"
                   src={item.src}
                   alt={item.imageAlt}
                   className="h-full w-full object-cover"

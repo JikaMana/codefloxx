@@ -113,6 +113,7 @@ export const ReasonsTabContent = () => {
 
             <div className="aspect-square">
               <img
+                loading="lazy"
                 src={tab.imageSrc}
                 className="h-full w-full rounded-r-lg object-cover"
                 alt={tab.imageAlt}

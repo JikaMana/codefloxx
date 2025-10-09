@@ -16,6 +16,7 @@ export function ProjectCard({ project }) {
       <div className="aspect-video">
         <a href={project.link}>
           <img
+            loading="lazy"
             src={project.image}
             className="h-full w-full rounded-t-xl object-cover"
             alt={`Image for ${project.title}`}

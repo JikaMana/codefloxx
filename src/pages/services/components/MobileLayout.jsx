@@ -60,6 +60,7 @@ export function MobileLayout() {
         <div className="grid grid-cols-1 items-center gap-12 md:grid-cols-2 lg:gap-x-20">
           <div className="order-2 max-h-[588px] w-full overflow-hidden rounded-xl shadow-lg md:order-1">
             <img
+              loading="lazy"
               src="https://res.cloudinary.com/deid1vy94/image/upload/v1759412163/codefloxx-native-app-development_atdemg.avif"
               className="h-full w-full object-cover"
               alt="Placeholder image"
@@ -82,6 +83,7 @@ export function MobileLayout() {
                   className="h-8 w-32 flex-shrink-0 bg-white md:h-10 lg:h-12"
                 >
                   <img
+                    loading="lazy"
                     src={logo.src}
                     alt={logo.alt}
                     className="h-full w-full bg-white object-contain"

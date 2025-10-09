@@ -23,6 +23,7 @@ export function AboutUsStorySection() {
           </div>
           <div>
             <img
+              loading="lazy"
               src="https://d22po4pjz3o32e.cloudfront.net/placeholder-image-landscape.svg"
               className="rounded-image size-full object-cover"
               alt="Placeholder image"

@@ -63,6 +63,7 @@ export function Navbar() {
       <Card className="max-w-xxl bg-brand-main mx-auto flex min-h-12 w-full items-center justify-between gap-x-4 gap-y-4 overflow-visible rounded-b-none px-5 backdrop-blur-sm md:min-h-18 md:px-8 lg:rounded-b-xl lg:bg-transparent">
         <Link href="#">
           <img
+            loading="lazy"
             src="/codefloxx.svg"
             className="h-20 w-20 md:h-24 md:w-24"
             alt="Codefloxx Logo image"

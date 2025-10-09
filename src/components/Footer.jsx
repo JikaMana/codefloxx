@@ -72,6 +72,7 @@ export function Footer() {
           {/* 1. Logo */}
           <a href="#">
             <img
+              loading="lazy"
               src="/codefloxx.svg"
               className="h-24 w-24"
               alt="Codefloxx Logo image"

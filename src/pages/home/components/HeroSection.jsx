@@ -40,6 +40,7 @@ const HeroSection = () => {
 
       <div className="relative order-2 hidden min-h-[50vh] flex-1 items-stretch lg:flex lg:w-1/2">
         <img
+          loading="lazy"
           className="h-full w-full object-cover"
           src="https://res.cloudinary.com/deid1vy94/image/upload/v1759105727/photo-1728044849291-69f90d443aea_xxvut3.avif"
           alt="Illustration of a team working on a digital project"

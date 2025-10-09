@@ -39,6 +39,7 @@ export function WebsiteLayout() {
           </div>
           <div className="max-h-[588px] w-full overflow-hidden rounded-xl shadow-lg">
             <img
+              loading="lazy"
               src="https://res.cloudinary.com/deid1vy94/image/upload/v1759412163/codefloxx-responsive-website_ibtj7p.avif"
               className="h-full w-full object-cover"
               alt="Placeholder image"

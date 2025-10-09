@@ -73,6 +73,7 @@ export const OurVisionAndMission = () => {
                 className="h-8 w-32 flex-shrink-0 bg-white md:h-10 lg:h-12"
               >
                 <img
+                  loading="lazy"
                   src={logo.src}
                   alt={logo.alt}
                   className="h-full w-full bg-white object-contain"
@@ -104,6 +105,7 @@ export const OurVisionAndMission = () => {
 
       <div className="relative order-1 flex min-h-[50vh] flex-1 items-stretch lg:order-2 lg:w-1/2">
         <img
+          loading="lazy"
           className="h-full w-full object-cover"
           src="https://res.cloudinary.com/deid1vy94/image/upload/v1759174433/codefloxx-software-services_ehyjzw.webp"
           alt="Codefloxx Sofware company service"

@@ -235,6 +235,7 @@ export function BlogPostContent() {
                     return (
                       <figure key={index}>
                         <img
+                          loading="lazy"
                           src={item.imageSrc}
                           alt={item.imageAlt}
                           className="mt-8 mb-2 w-full rounded-2xl"

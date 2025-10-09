@@ -59,6 +59,7 @@ export function CodefloxxTeam() {
             <div key={index} className="flex flex-col text-center">
               <div className="mb-5 flex w-full items-center justify-center md:mb-6">
                 <img
+                  loading="lazy"
                   src={member.img}
                   alt={member.name}
                   className="size-12 min-h-12 min-w-12 rounded-full object-cover"

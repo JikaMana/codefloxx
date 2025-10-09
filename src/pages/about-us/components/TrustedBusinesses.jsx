@@ -34,6 +34,7 @@ export function TrustedBusinesses() {
               className="flex w-full items-center justify-center rounded-lg bg-white p-4"
             >
               <img
+                loading="lazy"
                 src={client.logoUrl}
                 className="max-h-12 w-auto md:max-h-14"
                 alt={`Codefloxx-${client.name} logo`}

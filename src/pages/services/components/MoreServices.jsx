@@ -43,6 +43,7 @@ export function MoreServices() {
           </div>
           <div className="max-h-[732px] w-full overflow-hidden">
             <img
+              loading="lazy"
               src="https://res.cloudinary.com/deid1vy94/image/upload/v1759412162/codefloxx-intelligent-web-applications_j99bgx.avif"
               className="h-full w-full object-cover"
               alt="Placeholder image"
@@ -53,6 +54,7 @@ export function MoreServices() {
         <div className="grid grid-cols-1 gap-y-12 md:grid-cols-2 md:items-center">
           <div className="max-h-[732px] w-full overflow-hidden">
             <img
+              loading="lazy"
               src="https://res.cloudinary.com/deid1vy94/image/upload/v1759412162/codefloxx-user-centric-interfaces_ee4ldp.avif"
               className="h-full w-full object-cover"
               alt="Placeholder image"
