@@ -10,7 +10,7 @@ export const serviceTabsData = [
     imageSrc:
       "https://res.cloudinary.com/deid1vy94/image/upload/v1759239824/codefloxx-web-development_hz7urx.avif",
     imageAlt:
-      "People collaborating around a table with pizza, representing web development.",
+      "People collaborating around a table, representing web development.",
   },
   {
     value: "mobile-apps",

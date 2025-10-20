@@ -9,35 +9,35 @@ export function Process() {
       src: "https://res.cloudinary.com/deid1vy94/image/upload/v1759146304/codefloxx-consultation_xh6lyo.webp",
       description:
         "Initial consultation to understand your business goals and technical requirements.",
-      imageAlt: "Placeholder image 1",
+      imageAlt: "Codefloxx Consultation",
     },
     {
       step: "2",
       src: "https://res.cloudinary.com/deid1vy94/image/upload/v1759105728/istockphoto-2169040419-612x612_cjkr4m.webp",
       description:
         "Detailed project planning and design phase with comprehensive technical specifications.",
-      imageAlt: "Placeholder image 2",
+      imageAlt: "Codefloxx Planning",
     },
     {
       step: "3",
       src: "https://res.cloudinary.com/deid1vy94/image/upload/v1759147074/codefloxx-development-process_neizqu.webp",
       description:
         "Development and iterative testing to ensure high-quality, robust software solutions.",
-      imageAlt: "Placeholder image 3",
+      imageAlt: "Codefloxx Development and Testing",
     },
     {
       step: "4",
       src: "https://res.cloudinary.com/deid1vy94/image/upload/v1759146697/codefloxx-deployment-integration_vbcko2.webp",
       description:
         "Deployment and integration of your custom digital product into your existing infrastructure.",
-      imageAlt: "Placeholder image 4",
+      imageAlt: "Codefloxx Deployment",
     },
     {
       step: "5",
       src: "https://res.cloudinary.com/deid1vy94/image/upload/v1759105728/codefloxx-support-maintenance_z09ezp.avif",
       description:
         "Ongoing support and maintenance to optimize performance and address future needs.",
-      imageAlt: "Placeholder image 5",
+      imageAlt: "Codefloxx Maintenance and Support",
     },
   ];
 

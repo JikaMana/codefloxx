@@ -10,7 +10,7 @@ export const serviceTabsData = [
     image:
       "https://d22po4pjz3o32e.cloudfront.net/placeholder-image-person-eating-pizza.jpg",
     imageAlt:
-      "People collaborating around a table with pizza, representing web development.",
+      "People collaborating around a table, representing web development.",
   },
   {
     value: "mobile-apps",

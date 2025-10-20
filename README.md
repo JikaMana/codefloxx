@@ -1,20 +1,20 @@
-# Codefloxx — Marketing Website
+# Codefloxx -Marketing Website
 
-A modern, responsive marketing website for Codefloxx — a software company focused on web & mobile solutions. Built with React, Vite and TailwindCSS, this repo provides a production-ready front-end template with reusable UI primitives and page sections.
+A modern, responsive marketing website for Codefloxx -a software company focused on web & mobile solutions. Built with React, Vite and TailwindCSS, this repo provides a production-ready front-end template with reusable UI primitives and page sections.
 
 Key files and components
 
 - Entry & routing
-  - [`src/main.jsx`](src/main.jsx) — app bootstrap
-  - [`src/App.jsx`](src/App.jsx) — React Router setup and layout
-  - [`src/pages/home/index.jsx`](src/pages/home/index.jsx) — homepage composition
+  - [`src/main.jsx`](src/main.jsx) -app bootstrap
+  - [`src/App.jsx`](src/App.jsx) -React Router setup and layout
+  - [`src/pages/home/index.jsx`](src/pages/home/index.jsx) -homepage composition
 - Reusable UI & layout
   - [`Navbar`](src/components/Navbar.jsx)
   - [`Footer`](src/components/Footer.jsx)
   - [`SectionHeader`](src/components/SectionHeader.jsx)
   - UI primitives under [`src/components/ui`](src/components/ui)
 - Utilities & hooks
-  - [`cn`](src/lib/utils.js) — className merge helper
+  - [`cn`](src/lib/utils.js) -className merge helper
   - [`useMediaQuery`](src/hooks/use-media-query.js)
 
 Technologies
@@ -66,10 +66,10 @@ npm run preview
 
 Scripts (see [package.json](package.json))
 
-- dev — vite development server
-- build — production build
-- preview — serve built files locally
-- lint — run ESLint
+- dev -vite development server
+- build -production build
+- preview -serve built files locally
+- lint -run ESLint
 
 Configuration
 
@@ -80,12 +80,12 @@ Configuration
 Project structure (important folders)
 
 - src/
-  - components/ — global components (Navbar, Footer, SectionHeader)
-  - components/ui/ — design primitives (Button, Card, Input, Tabs, etc.)
-  - pages/home/ — homepage and its sections (`HeroSection`, `WhyChooseUs`, `Portfolio`, ...)
-  - constants/ — static data (projects, testimonials, faq)
-  - hooks/ — small custom hooks (e.g. `use-media-query`)
-  - lib/ — helpers (`cn`)
+  - components/ -global components (Navbar, Footer, SectionHeader)
+  - components/ui/ -design primitives (Button, Card, Input, Tabs, etc.)
+  - pages/home/ -homepage and its sections (`HeroSection`, `WhyChooseUs`, `Portfolio`, ...)
+  - constants/ -static data (projects, testimonials, faq)
+  - hooks/ -small custom hooks (e.g. `use-media-query`)
+  - lib/ -helpers (`cn`)
 
 Extending the site
 

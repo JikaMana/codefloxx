@@ -38,7 +38,7 @@ export function CallToAction() {
             <Button
               title="Consult"
               size="lg"
-              className="h-auto w-max cursor-pointer rounded-full bg-teal-600 px-5 py-2.5 text-lg font-medium text-white shadow-xl shadow-teal-500/50 transition-colors hover:bg-teal-700"
+              className="h-auto w-max cursor-pointer rounded-full bg-teal-600 px-5 py-2.5 text-lg font-medium text-white transition-colors hover:bg-teal-700"
             >
               Consult
             </Button>

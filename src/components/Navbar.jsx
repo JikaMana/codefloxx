@@ -163,7 +163,7 @@ export function Navbar() {
                       },
                     }}
                     transition={{ duration: 0.2 }}
-                    className="lg:border-scheme-border bg-brand-secondary rounded-lg lg:absolute lg:z-50 lg:border lg:p-1 lg:[--height:auto] lg:[--y-close:25%]"
+                    className="lg:border-scheme-border bg-brand-secondary rounded-lg lg:absolute lg:z-50 lg:border lg:[--height:auto] lg:[--y-close:25%]"
                   >
                     <Link
                       to="/about-us"

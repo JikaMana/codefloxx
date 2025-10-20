@@ -58,7 +58,7 @@ export function ProjectCard({ project }) {
           className="text-primary mt-5 md:mt-6"
           asChild // Allows the button to wrap the anchor tag
         >
-          <a href={project.link} className="flex items-center">
+          <a href={project.link} target="_blank" className="flex items-center">
             <span>View project</span>
             <RxChevronRight className="size-10" strokeWidth={1} />
           </a>

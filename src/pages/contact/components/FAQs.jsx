@@ -97,7 +97,7 @@ export function FAQs() {
           <div className="mt-6">
             <Button
               title="Contact Us"
-              className="mx-auto h-12 w-full rounded-xl bg-teal-600 px-8 font-bold text-white shadow-lg shadow-teal-500/50 hover:bg-teal-700"
+              className="mx-auto h-12 w-full rounded-xl bg-teal-600 px-8 font-bold text-white hover:bg-teal-700"
             >
               Contact Us
             </Button>
