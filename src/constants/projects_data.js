@@ -1,6 +1,16 @@
 export const projects = [
   {
     id: 1,
+    title: "Recyclo Mobile App",
+    description:
+      "Cross-platform React Native app for recycling and waste management.",
+    tags: ["Mobile", "React Native", "Expo"],
+    image:
+      "https://res.cloudinary.com/deid1vy94/image/upload/v1761034254/codefloxx-recyclo-app_jdkpc3.png",
+    link: "#",
+  },
+  {
+    id: 2,
     title: "Bilma Scent – E-commerce Perfume Store",
     description:
       "Full-featured online perfume shop with product catalog, cart, and payment integration.",
@@ -9,16 +19,7 @@ export const projects = [
       "https://res.cloudinary.com/deid1vy94/image/upload/v1759155422/codefloxx-bilma-scents-project_zyu5cj.webp",
     link: "https://bilma-scents.vercel.app/",
   },
-  {
-    id: 2,
-    title: "Recyclo Mobile App",
-    description:
-      "Cross-platform React Native app for recycling and waste management.",
-    tags: ["Mobile", "React Native", "Expo"],
-    image:
-      "https://res.cloudinary.com/deid1vy94/image/upload/v1759436107/codefloxx-recyclo-poster_hvbt4i.png",
-    link: "#",
-  },
+
   {
     id: 3,
     title: "City Model Schools Website",

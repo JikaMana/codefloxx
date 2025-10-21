@@ -205,24 +205,47 @@ export function Footer() {
             <h2 className="mb-3 font-semibold md:mb-4">Socials</h2>
             <ul>
               <li className="py-2 text-sm">
-                <a href="#" className="flex items-center gap-3">
+                <a
+                  href="https://www.instagram.com/codefloxx_tech"
+                  target="_blank"
+                  className="flex items-center gap-3"
+                >
                   Instagram
                 </a>
               </li>
               <li className="py-2 text-sm">
-                <a href="#" className="flex items-center gap-3">
+                <a
+                  href="https://wa.link/6l8tgj"
+                  target="_blank"
+                  className="flex items-center gap-3"
+                >
                   WhatsApp
                 </a>
               </li>
               <li className="py-2 text-sm">
-                <a href="#" className="flex items-center gap-3">
+                <a
+                  href="https://x.com/codefloxx_tech"
+                  target="_blank"
+                  className="flex items-center gap-3"
+                >
                   Twitter
                 </a>
               </li>
-              <li className="py-2 text-sm">
-                <a href="#" className="flex items-center gap-3">
+              {/* <li className="py-2 text-sm">
+                <a
+                  href="https://www.instagram.com/codefloxx_tech"
+                  target="_blank"
+                  className="flex items-center gap-3"
+                >
                   Linkedin
                 </a>
+              </li> */}
+              <h2 className="mt-2 font-semibold">Working Hours</h2>
+
+              <li className="py-2 text-sm">
+                <p href="#" className="flex items-center gap-3">
+                  8:00 AM - 6 PM
+                </p>
               </li>
             </ul>
           </div>
